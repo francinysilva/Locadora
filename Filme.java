@@ -1,34 +1,41 @@
 public class Filme {
 	
-	public String nomeFilme;
-	public int codFilme;
-	public double valorFilme;
-	public String descricaoFilme;
+	public String nome;
+	public int cod;
+	public double valor;
+	public String descricao;
 	public boolean filmeLocado;
 	
+	public void imprimir() {
+		System.out.println("Filme:");
+		System.out.println("Nome: "+nome);
+		System.out.println("Descrição: "+descricao);
+		System.out.println("Filme locado: "+filmeLocado);
+	}
+	
 	public String getNomeFilme() {
-		return nomeFilme;
+		return nome;
 	}
 	public void setNomeFilme(String nomeFilme) {
-		this.nomeFilme = nomeFilme;
+		this.nome = nomeFilme;
 	}
 	public int getCodFilme() {
-		return codFilme;
+		return cod;
 	}
 	public void setCodFilme(int codFilme) {
-		this.codFilme = codFilme;
+		this.cod = codFilme;
 	}
 	public double getValorFilme() {
-		return valorFilme;
+		return valor;
 	}
 	public void setValorFilme(double valorFilme) {
-		this.valorFilme = valorFilme;
+		this.valor = valorFilme;
 	}
 	public String getDescricaoFilme() {
-		return descricaoFilme;
+		return descricao;
 	}
 	public void setDescricaoFilme(String descricaoFilme) {
-		this.descricaoFilme = descricaoFilme;
+		this.descricao = descricaoFilme;
 	}
 	public boolean isFilmeLocado() {
 		return filmeLocado;
