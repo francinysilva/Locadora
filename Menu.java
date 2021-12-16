@@ -1,8 +1,8 @@
-import java.util.Scanner;
+import java.util.Scanner;//importaçao biblioteca scanner
 
 public class Menu {
 
-	public static Scanner leitor = new Scanner(System.in);
+	public static Scanner leitor = new Scanner(System.in);//declaraçao de scanner
 	
 	public static Cadastro lerCadastro() {	
 		System.out.println("Cadastrando um usuario.");
@@ -18,7 +18,7 @@ public class Menu {
 			cad = new Cadastro(nome, email, senha);
 		}
 		return cad;
-	}
+	}//metodo pra ler cadastro
 	
 	public static Usuario lerUsuario() {
 		System.out.println("Por favor, digite os dados pedidos.");
@@ -30,4 +30,4 @@ public class Menu {
 		Usuario usu = new Usuario (nome, email); 
 		return usu; 
 	}
-}
+}//metodo ler usuario
