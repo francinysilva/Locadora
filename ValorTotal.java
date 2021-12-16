@@ -1,5 +1,5 @@
 public class ValorTotal {
-	
+	//classe com sobrecarga que soma valores
 	public double vFinal (double a, double b) {
 		return a+b;
 	}
