@@ -1,5 +1,6 @@
 public class Filme {
 	
+	//variaveis
 	public String nome;
 	public int cod;
 	public double valor;
@@ -11,8 +12,10 @@ public class Filme {
 		System.out.println("Nome: "+nome);
 		System.out.println("Descrição: "+descricao);
 		System.out.println("Filme locado: "+filmeLocado);
-	}
+	}//metodo imprimir da classe
 	
+	
+	//getters e setters da classe
 	public String getNomeFilme() {
 		return nome;
 	}
