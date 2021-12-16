@@ -5,3 +5,4 @@ abstract class Pessoa {
 	
 	public abstract String obterFuncao();
 }
+//classe abstrata com heranças ligadas a pessoas
