@@ -1,21 +1,34 @@
+import java.util.ArrayList;
+
 public class Filme {
-	
-	//variaveis
+	//variaveis filme
 	public String nome;
 	public int cod;
 	public double valor;
 	public String descricao;
 	public boolean filmeLocado;
-	
-	public void imprimir() {
-		System.out.println("Filme:");
-		System.out.println("Nome: "+nome);
-		System.out.println("Descrição: "+descricao);
-		System.out.println("Filme locado: "+filmeLocado);
-	}//metodo imprimir da classe
-	
-	
-	//getters e setters da classe
+	//construct da class
+	public Filme(String nome, int cod, double valor, String descricao, boolean filmeLocado) {
+		this.nome = nome;
+		this.cod = cod;
+		this.valor = valor;
+		this.descricao = descricao;
+		this.filmeLocado = filmeLocado;
+	}
+	//imprimir da class filme
+	public static void imprimir(ArrayList<Filme> f) {
+		for (int i = 0; i<Usuario.filmes.size();i++) {
+			if(Usuario.filmes.get(i).isFilmeLocado()==true) {
+				i++;
+			}
+			System.out.println("");
+			System.out.println("Nome: "+Usuario.filmes.get(i).getNomeFilme());
+			System.out.println("Codigo: "+Usuario.filmes.get(i).getCodFilme());
+			System.out.println("Descriçao: "+Usuario.filmes.get(i).getDescricaoFilme());
+			System.out.println("Valor: R$"+Usuario.filmes.get(i).getValorFilme()+"0");
+		}
+	}
+	//setters e getters das variaveis
 	public String getNomeFilme() {
 		return nome;
 	}
