@@ -6,24 +6,24 @@ public class Usuario extends Pessoa implements Pessoas{
 		this.nome = nome;
 		this.email = email;
 	}
-	
-	public String senha = "senha123";
 	//variaveis e arraylists da classe
-	public ArrayList<Usuario> usuarios = new ArrayList<>();	
-	public ArrayList<Filme> filmes = new ArrayList<>();
+	public static ArrayList<Usuario> usuarios = new ArrayList<Usuario>();	
 	
-	public void imprimir() {//imprimir da classe
+	public static ArrayList<Filme> filmes = new ArrayList<>();
+	
+	public void imprimir() {
 		System.out.println("Dados do usuario");
 		System.out.println("Nome:"+nome);
 		System.out.println("Email:"+email);
-		System.out.println("Filmes locados: "+filmes.size());
-	}
+	}//imprimir da classe
 	
 	public String obterFuncao() {
 		String f = "Cliente";
 		return f;
-	}//metodo herdado de Pessoa.java
+	}
+	//metodo herdado de Pessoa.java
 
+	
 	//getters e setters
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -33,20 +33,12 @@ public class Usuario extends Pessoa implements Pessoas{
 		this.email = email;
 	}
 	
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
-
 	public ArrayList<Usuario> getUsuarios() {
 		return usuarios;
 	}
 
 	public void setUsuarios(ArrayList<Usuario> usuarios) {
-		this.usuarios = usuarios;
+		Usuario.usuarios = usuarios;
 	}
 
 	public ArrayList<Filme> getFilmes() {
@@ -54,7 +46,7 @@ public class Usuario extends Pessoa implements Pessoas{
 	}
 
 	public void setFilmes(ArrayList<Filme> filmes) {
-		this.filmes = filmes;
+		Usuario.filmes = filmes;
 	}
 	
 	//getters e setters herdados da interface Pessoas.Java
